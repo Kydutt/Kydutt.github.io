@@ -75,7 +75,7 @@ const animationTimeline = () => {
             opacity: 0,
             y: 10
         },
-    "-=1")
+    "+=4")
     .from(".three", 0.7, {
         opacity: 0,
         y: 10
@@ -86,7 +86,7 @@ const animationTimeline = () => {
             opacity: 0,
             y: 10
         },
-    "+=3")
+    "+=4")
     .from(".four", 0.7, {
         scale: 0.2,
         opacity: 0,
@@ -113,11 +113,11 @@ const animationTimeline = () => {
             opacity: 0,
             y: -150
         },
-    "+=1")
+    "+=4")
     .from(".idea-1", 0.7, ideaTextTrans)
-    .to(".idea-1", 0.7, ideaTextTransLeave, "+=4.5")
+    .to(".idea-1", 0.7, ideaTextTransLeave, "+=2.5")
     .from(".idea-2", 0.7, ideaTextTrans)
-    .to(".idea-2", 0.7, ideaTextTransLeave, "+=4.5")
+    .to(".idea-2", 0.7, ideaTextTransLeave, "+=2.5")
     .from(".idea-3", 0.7, ideaTextTrans)
     .to(".idea-3 strong", 0.5, {
         scale: 1.2,
@@ -138,7 +138,7 @@ const animationTimeline = () => {
             z: 10,
             opacity: 0,
         },
-        "+=3.5"
+        "+=1.5"
     )
     .to(
         ".idea-5 span",
@@ -146,7 +146,7 @@ const animationTimeline = () => {
             rotation: 90,
             x: 8,
         },
-        "+=3.5"
+        "+=1.4"
     )
     .to(
         ".idea-5",
@@ -154,7 +154,7 @@ const animationTimeline = () => {
             scale: 0.2,
             opacity: 0,
         },
-        "+=3"
+        "+=2"
     )
     .staggerFrom(
         ".idea-6 span",
@@ -199,12 +199,12 @@ const animationTimeline = () => {
         },
         "-=2"
     )
-    .from(".hat", 0.5, {
-        x: -100,
-        y: 350,
-        rotation: -180,
-        opacity: 0,
-    })
+    // .from(".hat", 0.5, {
+    //     x: -100,
+    //     y: 350,
+    //     rotation: -180,
+    //     opacity: 0,
+    // })
     .staggerFrom(
         ".wish-hbd span",
         0.7, {
